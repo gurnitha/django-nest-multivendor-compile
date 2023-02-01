@@ -385,3 +385,6 @@ Compiling the step-by-step django-nest-multivendor
         modified:   templates/app/core/product_detail.html
         modified:   templates/app/core/product_list.html
         modified:   templates/partials/nav-bar.html
+
+
+## 14. WORKING WITH TAGS
