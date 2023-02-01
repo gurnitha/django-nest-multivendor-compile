@@ -324,3 +324,6 @@ Compiling the step-by-step django-nest-multivendor
         new file:   templates/app/core/vendor_detail.html
         modified:   templates/app/core/vendor_list.html
         modified:   templates/partials/nav-bar.html
+
+
+## 12. PRODUCT DETAILS
