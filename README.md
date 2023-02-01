@@ -36,5 +36,8 @@ Compiling the step-by-step django-nest-multivendor
 
 ## 02. DATABASE
 
- 
 
+#### 02.1 Create, connect, protect database
+
+        modified:   README.md
+        modified:   config/settings.py
