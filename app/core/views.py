@@ -4,7 +4,7 @@
 from django.shortcuts import render
 
 # Locals
-from app.core.models import Product
+from app.core.models import Product, Category
 
 # Create your views here.
 
@@ -23,3 +23,10 @@ def product_list_view(request):
 	# print(products)
 	context = {'products':products}
 	return render(request, 'app/core/product_list.html', context)
+
+
+def category_list_view(request):
+	categories = Category.objects.all()
+	# print(categories)
+	context = {'categories':categories}
+	return render(request, 'app/core/category_list.html', context)
