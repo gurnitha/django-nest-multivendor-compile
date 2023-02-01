@@ -363,3 +363,7 @@ Compiling the step-by-step django-nest-multivendor
         new file:   media/user_directory_path/product-13-2_BCyjwCF.jpg
         modified:   templates/app/core/index.html
         new file:   templates/app/core/product_detail.html
+
+
+## 13. RELATED PRODUCTS
+
