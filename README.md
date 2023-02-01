@@ -367,3 +367,21 @@ Compiling the step-by-step django-nest-multivendor
 
 ## 13. RELATED PRODUCTS
 
+
+#### 13.1 Showing related products
+
+        6 Related Products - Add link with the shop menu in nav-bar to show product-list page and add link to show product-detail page
+        5 Related Products - Add link to show detail of the product-related category
+        4 Related Products - Showing information if there no product-related category found
+        3 Related Products - Showing product related category
+        2 Related Products - Rendering rel_products instance to product_detail page
+        1 Related Products - Geting instance of the related product by category in product_detail_view
+
+        new file:   app/core/migrations/0030_product_prod_image_hover_alter_product_status_choice.py
+        modified:   app/core/models.py
+        modified:   app/core/views.py
+        new file:   media/user_directory_path/product-2-1_rRrH2k9.jpg
+        new file:   media/user_directory_path/product-2-2.jpg
+        modified:   templates/app/core/product_detail.html
+        modified:   templates/app/core/product_list.html
+        modified:   templates/partials/nav-bar.html

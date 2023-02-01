@@ -34,10 +34,22 @@ def product_detail_view(request, any):
 	# product = get_object_or_404(Product, vid=vid) # this similar to the above
 	# print(product)
 
+	# # Related products - part 1
+	# rel_products = Product.objects.filter(category=product.category)
+	# print(rel_products)
+
+	# Related products - part 2 
+	rel_products = Product.objects.filter(category=product.category).exclude(pid=any)[:4]
+	print(rel_products)
+
 	# Get related products
 	products = product.related_products.all()
 	# print(products)
-	context = {'product':product, 'products':products}
+	context = {
+		'product':product, 
+		'products':products,
+		'rel_products':rel_products,
+	}
 	return render(request, 'app/core/product_detail.html', context)
 
 
