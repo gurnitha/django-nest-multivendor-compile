@@ -410,3 +410,7 @@ Compiling the step-by-step django-nest-multivendor
         new file:   media/user_directory_path/thumbnail-3_lXH6kN6.jpg
         modified:   templates/app/core/product_detail.html
         new file:   templates/app/core/tag.html
+
+
+## 15. CKEDITOR
+
