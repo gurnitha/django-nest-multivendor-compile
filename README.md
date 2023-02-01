@@ -292,3 +292,8 @@ Compiling the step-by-step django-nest-multivendor
         modified:   templates/partials/nav-bar.html
         new file:   templates/partials/nav-brows-all-categories.html
         modified:   templates/partials/nav-mobile.html
+
+
+## 11. VENDORS
+
+ 
