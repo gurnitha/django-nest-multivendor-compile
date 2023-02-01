@@ -141,3 +141,7 @@ Compiling the step-by-step django-nest-multivendor
         modified:   app/userauth/views.py
         modified:   templates/app/userauth/login.html
         modified:   templates/partials/header.html
+
+
+## 06. DJANGO ALERT MESSAGES
+
