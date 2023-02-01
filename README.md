@@ -155,3 +155,7 @@ Compiling the step-by-step django-nest-multivendor
         modified:   app/userauth/views.py
         modified:   templates/base.html
         modified:   templates/partials/header.html
+
+
+## 07. DJANGO MODELS
+
