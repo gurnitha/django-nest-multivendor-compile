@@ -193,3 +193,6 @@ Compiling the step-by-step django-nest-multivendor
         app/core/migrations/0017_auto_20230104_0859.py
         app/core/migrations/0018_auto_20230104_0901.py
         app/core/migrations/0019_product_vendor.py
+
+        
+## 08. LOADING DAN RENDERING PRODUCTS
