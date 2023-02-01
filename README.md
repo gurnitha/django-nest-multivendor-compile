@@ -34,4 +34,7 @@ Compiling the step-by-step django-nest-multivendor
         new file:   templates/partials/quickview.html
 
 
+## 02. DATABASE
+
+ 
 
