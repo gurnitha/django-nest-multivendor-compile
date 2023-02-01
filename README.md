@@ -240,3 +240,16 @@ Compiling the step-by-step django-nest-multivendor
         3 Create category-list page - Load static files
         2 Create category-list page - add template to category-list page
         1 Create category-list page - urls, views, templates
+
+        modified:   README.md
+        modified:   app/core/urls.py
+        modified:   app/core/views.py
+        new file:   templates/app/core/category_list.html
+
+
+#### 09.2 Retrieving and rendering products-by-category in sidebar
+
+        7 Create category-list page - Showing all products belong to a category in the sidebar
+
+        modified:   README.md
+        modified:   templates/app/core/category_list.html
