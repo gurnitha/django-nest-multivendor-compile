@@ -194,5 +194,24 @@ Compiling the step-by-step django-nest-multivendor
         app/core/migrations/0018_auto_20230104_0901.py
         app/core/migrations/0019_product_vendor.py
 
-        
+
 ## 08. LOADING DAN RENDERING PRODUCTS
+
+
+#### 08.1 Retrieving featured (popular) products from db and rendering them to the home page
+
+        2 Display all products to homepage with filter
+        1 Display all products to homepage without filter
+
+        modified:   app/core/admin.py
+        new file:   app/core/migrations/0020_auto_20230104_2253.py
+        new file:   app/core/migrations/0021_rename_pro_status_choice_product_status_choice.py
+        modified:   app/core/models.py
+        modified:   app/core/views.py
+        new file:   media/category/product-1-1.jpg
+        ...
+        new file:   media/user_directory_path/product-8-1.jpg
+        new file:   media/user_directory_path/product-9-1.jpg
+        new file:   media/user_directory_path/product-9-1_esaY4OO.jpg
+        new file:   templates/app/core/index.html
+        modified:   templates/base.html

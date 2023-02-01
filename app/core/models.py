@@ -22,7 +22,9 @@ def user_directory_path(instance, filename):
 
 # Model: Category
 class Category(models.Model):
-	cid = ShortUUIDField(unique=True, length=10, max_length=20,prefix='cat', alphabet='abcdefgh12345')
+	cid = ShortUUIDField(
+					unique=True, length=10, max_length=20,
+					prefix='cat', alphabet='abcdefgh12345')
 	title = models.CharField(max_length=100, default='Food')
 	image = models.ImageField(upload_to='category', default='category.jpg')
 
@@ -46,7 +48,9 @@ class Tag(models.Model):
 
 # Model: Vendor
 class Vendor(models.Model):
-	vid = ShortUUIDField(unique=True, length=10, max_length=20,prefix='ven', alphabet='abcdefgh12345')
+	vid = ShortUUIDField(
+					unique=True, length=10, max_length=20,
+					prefix='ven', alphabet='abcdefgh12345')
 	title = models.CharField(max_length=100, default='Nestify')
 	image = models.ImageField(upload_to='user_directory_path', default='vendor.jpg')
 	description = models.TextField(null=True, blank=True, default='I am a great vendor')
@@ -84,7 +88,9 @@ class Product(models.Model):
 		('published', 'Published'),
 	) 
 
-	pid = ShortUUIDField(unique=True, length=10, max_length=20,prefix='prod', alphabet='abcdefgh12345')
+	pid = ShortUUIDField(
+					unique=True, length=10, max_length=20,
+					prefix='prod', alphabet='abcdefgh12345')
 	user = models.ForeignKey(User, on_delete=models.SET_NULL, null=True)
 	category = models.ForeignKey(Category, on_delete=models.SET_NULL, null=True)
 	vendor = models.ForeignKey(Vendor, on_delete=models.SET_NULL, null=True)
@@ -92,13 +98,13 @@ class Product(models.Model):
 	prod_image = models.ImageField(upload_to='user_directory_path', default='product.jpg')
 	description = models.TextField(null=True, blank=True, default='This is the product')
 
-	new_price = models.DecimalField(max_digits=100, decimal_places=2, default='1.99')
+	price = models.DecimalField(max_digits=100, decimal_places=2, default='1.99')
 	old_price = models.DecimalField(max_digits=100, decimal_places=2, default='2.99')
 
 	specifications = models.TextField(null=True, blank=True)
-	tag = models.ForeignKey(Tag, on_delete=models.SET_NULL, null=True)
+	# tag = models.ForeignKey(Tag, on_delete=models.SET_NULL, null=True)
 
-	pro_status_choice = models.CharField(choices=PRODUCT_STATUS_CHOICES, max_length=10, default='in_review')
+	status_choice = models.CharField(choices=PRODUCT_STATUS_CHOICES, max_length=10, default='in_review')
 
 	status = models.BooleanField(default=True)
 	in_stock = models.BooleanField(default=True)
@@ -114,16 +120,16 @@ class Product(models.Model):
 		verbose_name_plural = 'Products'
 
 	def product_image(self):
-		# Concatinate src="%s" and (self.image.url)
-		# s in "%s" = src, src = self.image.url
-		return mark_safe('<img src="%s" width="50" height="50" />' %(self.image.url))
+		# Concatinate src="%s" and (self.prod_image.url)
+		# s in "%s" = src, src = self.prod_image.url
+		return mark_safe('<img src="%s" width="50" height="50" />' %(self.prod_image.url))
 
 	def __str__(self):
 		return self.title 
 
 	# Define discounted price
-	def get_procentage(self):
-		prod_current_price = (self.prod_new_price / self.prod_old_price) * 100
+	def get_percentage(self):
+		prod_current_price = (self.price / self.old_price) * 100
 		return prod_current_price
 
 
