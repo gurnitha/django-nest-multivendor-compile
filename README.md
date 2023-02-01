@@ -271,3 +271,24 @@ Compiling the step-by-step django-nest-multivendor
 
 ## 10. DJANGO CONTEXT PROCESSORS
 
+
+#### 10.1 Defining default context processors method for Category
+
+        7 Add links to menu-related categories
+        6 Add links to some category menu
+        5 Load all categories page and product by category page in nav-brows-all-categories (show more ...)
+        4 Load all categories page and product by category page in nav-brows-all-categories
+        3 Load all categories page and product by category page in nav-mobile
+        2 Load all categories page and product by category page
+        1 Load category in nav-bar using context_processors
+
+        modified:   README.md
+        new file:   app/core/context_processors.py
+        modified:   templates/app/core/category_list.html
+        modified:   templates/app/core/index.html
+        modified:   templates/app/core/product_by_category_list.html
+        modified:   templates/app/core/product_list.html
+        modified:   templates/partials/header.html
+        modified:   templates/partials/nav-bar.html
+        new file:   templates/partials/nav-brows-all-categories.html
+        modified:   templates/partials/nav-mobile.html
