@@ -429,3 +429,8 @@ Compiling the step-by-step django-nest-multivendor
         modified:   config/urls.py
         ...
         modified:   templates/app/core/product_detail.html
+
+
+## 16. PRODUCT REVIEWS
+
+
