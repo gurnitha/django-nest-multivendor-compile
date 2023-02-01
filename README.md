@@ -120,7 +120,7 @@ Compiling the step-by-step django-nest-multivendor
         new file:   templates/app/userauth/register.html
 
 
-## 05.2 Creating login system
+#### 05.2 Creating login system
 
         2 Add template to login page and login
         1 Add logic to login_view
@@ -129,3 +129,15 @@ Compiling the step-by-step django-nest-multivendor
         modified:   app/userauth/views.py
         modified:   templates/app/userauth/login.html
         modified:   templates/app/userauth/register.html
+
+
+#### 05.3 Creating logout system
+
+        2 Hiding logout and login menu in header
+        1 Logout a user
+
+        modified:   README.md
+        modified:   app/userauth/urls.py
+        modified:   app/userauth/views.py
+        modified:   templates/app/userauth/login.html
+        modified:   templates/partials/header.html
