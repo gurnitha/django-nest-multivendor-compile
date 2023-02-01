@@ -159,3 +159,37 @@ Compiling the step-by-step django-nest-multivendor
 
 ## 07. DJANGO MODELS
 
+
+## 07.1. Django model: Product, Category, Vendor, ProductImage, CartOrder, Wishlist
+
+        11 Modify Product model by adding vendor field
+        10 Modify Product model
+        9 Modify Wishlist model
+        8 Modify ProductReview model
+        7 Modify CartOrderItem model
+        6 Modify CartOrder model
+        5 Modify ProductImage model
+        4 Modify Vendor model
+        3 Modify Category model
+        2 Modify Product model
+        1 Create django model, migrations, and admin
+
+        app/core/migrations/0001_initial.py
+        app/core/migrations/0002_vendor.py
+        app/core/migrations/0003_product_tag.py
+        app/core/migrations/0004_productimage.py
+        app/core/migrations/0005_cartorder.py
+        app/core/migrations/0006_cartorderitem.py
+        app/core/migrations/0007_productreview.py
+        app/core/migrations/0008_wishlist.py
+        app/core/migrations/0009_address.py
+        app/core/migrations/0010_auto_20230104_0821.py
+        app/core/migrations/0011_auto_20230104_0827.py
+        app/core/migrations/0012_auto_20230104_0829.py
+        app/core/migrations/0013_auto_20230104_0831.py
+        app/core/migrations/0014_auto_20230104_0834.py
+        app/core/migrations/0015_auto_20230104_0836.py
+        app/core/migrations/0016_auto_20230104_0851.py
+        app/core/migrations/0017_auto_20230104_0859.py
+        app/core/migrations/0018_auto_20230104_0901.py
+        app/core/migrations/0019_product_vendor.py
