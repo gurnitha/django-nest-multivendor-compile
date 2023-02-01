@@ -7,6 +7,19 @@ Compiling the step-by-step django-nest-multivendor
 
 #### 01.1 Setup, create project and app, homepage with urls, views and template inheritance
 
+        11 Template inheritance
+        10 Add and loading static files
+        9 Setting up static and media files
+        8 Add html template to index
+        7 Hello Wordl using url, view and templates
+        6 Register core app to config/settings.py, run the server
+        5 Create a new app: app/core
+        4 Create new project named config
+        3 Activate venv3932, install django==3.2, and upgrade pip
+        2 Create virtual environment
+        1 Create a new Github repository
+        ea38bde - I Nyoman Gurnitha : Initial commit
+
         modified:   .gitignore
         modified:   README.md
         new file:   app/core/__init__.py
@@ -39,6 +52,10 @@ Compiling the step-by-step django-nest-multivendor
 
 #### 02.1 Create, connect, protect database
 
+        3 Protecting project configuration files
+        2 Create and connect database with the project
+        1 Install psycopg2 driver: pip install psycopg2
+
         modified:   README.md
         modified:   config/settings.py
 
@@ -47,6 +64,15 @@ Compiling the step-by-step django-nest-multivendor
 
 
 #### 03.1 Creating userauth app and custom user model called 'User'
+
+        8 Register your models here.
+        7 Register User model to admin.py
+        6 Create superuser, run server and login to admin
+        5 Run makemigrations and migrate and runserver
+        4 Add AUTH_USER_MODEL = 'userauth.User' in config/settings.py
+        3 Create custom class User(AbstractUser): in userauth/models.py
+        2 Register userauth app to config/settings.py
+        1 Create a new app: app/userauth
 
         new file:   app/userauth/__init__.py
         new file:   app/userauth/admin.py
@@ -60,3 +86,12 @@ Compiling the step-by-step django-nest-multivendor
 
 
 ## 04. SETTING UP ADMIN DASHBOARD
+
+
+#### 04.1 Install and configuring jazzmin for admin dashboard
+
+        3 Configuring jazzmin for its look in admin panel
+        2 Add jazzmin in config/INSTALLED_APPS and re-run the server
+        1 Install django-jazzmin: pip install -U django-jazzmin
+
+        modified:   config/settings.py
