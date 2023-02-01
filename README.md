@@ -44,3 +44,16 @@ Compiling the step-by-step django-nest-multivendor
 
 
 ## 03. CUSTOM USER MODEL
+
+
+#### 01. Creating userauth app and custom user model called 'User'
+
+        new file:   app/userauth/__init__.py
+        new file:   app/userauth/admin.py
+        new file:   app/userauth/apps.py
+        new file:   app/userauth/migrations/0001_initial.py
+        new file:   app/userauth/migrations/__init__.py
+        new file:   app/userauth/models.py
+        new file:   app/userauth/tests.py
+        new file:   app/userauth/views.py
+        modified:   config/settings.py
