@@ -267,3 +267,7 @@ Compiling the step-by-step django-nest-multivendor
         modified:   app/core/views.py
         modified:   templates/app/core/category_list.html
         new file:   templates/app/core/product_by_category_list.html
+
+
+## 10. DJANGO CONTEXT PROCESSORS
+
