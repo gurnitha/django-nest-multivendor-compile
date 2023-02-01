@@ -353,6 +353,21 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Display allert messages -->
+                {% if messages %}
+                    {% for message in messages %}
+                        <div class="alert alert-{{message.tags}}">
+                            <strong>{{ message }}!</strong>
+                        </div>
+                    {% endfor %}
+                {% endif %}
+                <!-- Load jQuery to close the alert message -->
+                <script>
+                    setTimeout (() => {
+                        $(".alert").alert("close");
+                    }, 3000)
+                </script>
             </div>
         </div>
     </header>

@@ -145,3 +145,13 @@ Compiling the step-by-step django-nest-multivendor
 
 ## 06. DJANGO ALERT MESSAGES
 
+
+#### 06.1 Creating django alert messages
+
+        2 Use jQuery to make alert disappear automatically in some seconds
+        1 Looping alert messages in the header
+
+        modified:   README.md
+        modified:   app/userauth/views.py
+        modified:   templates/base.html
+        modified:   templates/partials/header.html
