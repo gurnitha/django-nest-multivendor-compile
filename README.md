@@ -296,4 +296,16 @@ Compiling the step-by-step django-nest-multivendor
 
 ## 11. VENDORS
 
- 
+
+#### 11.1 Creating vendor-list
+
+        3 Add logic to vendor_list_view and render vendors to vendor's page
+        2 Add template to vendors page
+        1 Vendor list: urls, views, templates
+
+        modified:   README.md
+        modified:   app/core/urls.py
+        modified:   app/core/views.py
+        modified:   app/core/models.py
+        new file:   app/core/migrations/0023_auto_20230111_0009.py
+        new file:   templates/app/core/vendor_list.html
