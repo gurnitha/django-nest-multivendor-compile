@@ -41,3 +41,6 @@ Compiling the step-by-step django-nest-multivendor
 
         modified:   README.md
         modified:   config/settings.py
+
+
+## 03. CUSTOM USER MODEL
