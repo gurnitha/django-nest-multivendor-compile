@@ -98,3 +98,23 @@ Compiling the step-by-step django-nest-multivendor
 
 
 ## 05. USER REGISTRATION SYSTEM
+
+
+#### 05.1 Creating user registration system
+
+        8 Configure the register page - showing error messages to register page
+        7 Configure the register page - add widget in forms.py and use it in the regiter page
+        6 Configure the register page-delete form inpu
+        5 Add template to register page and renamed sign-up and sign-in files
+        4 Redirect signed up user to login page
+        3 Use UserRegisterForm in register_view method to register a new user
+        2 Create form class UserRegisterForm (UserCreationForm) in: app/userauth/forms.py and reder its instances to sign-up page
+        1 Create register_view method to render sign-up page
+
+        modified:   README.md
+        new file:   app/userauth/forms.py
+        new file:   app/userauth/urls.py
+        modified:   app/userauth/views.py
+        modified:   config/urls.py
+        new file:   templates/app/userauth/login.html
+        new file:   templates/app/userauth/register.html
