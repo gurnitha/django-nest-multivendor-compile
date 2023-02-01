@@ -104,9 +104,17 @@ class Product(models.Model):
 	old_price = models.DecimalField(max_digits=100, decimal_places=2, default='2.99')
 
 	specifications = models.TextField(null=True, blank=True)
+	type = models.CharField(max_length=100, default='Organic', null=True, blank=True)
+	stock_count = models.CharField(max_length=100, default='10', null=True, blank=True)
+	life = models.CharField(max_length=100, default='100', null=True, blank=True)
+	mfd = models.DateTimeField(auto_now_add=False , null=True, blank=True)
+
 	# tag = models.ForeignKey(Tag, on_delete=models.SET_NULL, null=True)
 
-	status_choice = models.CharField(choices=PRODUCT_STATUS_CHOICES, max_length=10, default='in_review')
+	status_choice = models.CharField(
+			choices=PRODUCT_STATUS_CHOICES, 
+			max_length=10, default='in_review', 
+			verbose_name='Product status') # It will show in admin panel, 'Product status' instead of 'Status choice'
 
 	status = models.BooleanField(default=True)
 	in_stock = models.BooleanField(default=True)
@@ -131,15 +139,16 @@ class Product(models.Model):
 
 	# Define discounted price
 	def get_percentage(self):
-		prod_current_price = (self.price / self.old_price) * 100
+		# prod_current_price = (self.price / self.old_price) * 100
+		prod_current_price = (self.old_price - self.price) / (self.old_price) * 100
 		return prod_current_price
 
 
 
 # Model: Product Image
 class ProductImage(models.Model):
-	image = models.ImageField(upload_to='product-images', default='product.jpg')
-	product = models.ForeignKey(Product, on_delete=models.SET_NULL, null=True)
+	thumbnail = models.ImageField(upload_to='product-images/thumbnails/', default='product.jpg')
+	product = models.ForeignKey(Product, related_name='related_products', on_delete=models.SET_NULL, null=True)
 	created = models.DateTimeField(auto_now_add=True)
 	updated = models.DateTimeField(null=True, blank=True)
 

@@ -327,3 +327,39 @@ Compiling the step-by-step django-nest-multivendor
 
 
 ## 12. PRODUCT DETAILS
+
+
+#### 12.1 Retrieving and rendering product details
+
+        12 Product detail - Turned off the address
+        11 Product detail - Display and link product-by-category
+        10 Product detail - Display Vendor information
+        9 Product detail - Return & Warranty
+        8 Product detail - Redering user address
+        7 Product detail - Redering product description
+        6 Product detail - Load product spesifications
+        5 Product detail - Load product information
+        4 Product detail - Loading product image and thumbnails
+        3 Product detail - Loding prod_image in slider section
+        2 Product detail - Add static template and load static files
+        1 Product detail - Urls, Views, Template
+
+        modified:   app/core/admin.py
+        modified:   app/core/context_processors.py
+        new file:   app/core/migrations/0025_alter_productimage_product.py
+        new file:   app/core/migrations/0026_remove_productimage_image_productimage_thumbnail_and_more.py
+        new file:   app/core/migrations/0027_product_life_product_mfd_product_stock_product_type_and_more.py
+        new file:   app/core/migrations/0028_rename_stock_product_stock_status_alter_product_life.py
+        new file:   app/core/migrations/0029_rename_stock_status_product_stock_count.py
+        modified:   app/core/models.py
+        modified:   app/core/urls.py
+        modified:   app/core/views.py
+        modified:   config/settings.py
+        new file:   media/product-images/thumbnail-1.jpg
+        new file:   media/product-images/thumbnail-2.jpg
+        ...
+        new file:   media/user_directory_path/cat-1.png
+        new file:   media/user_directory_path/product-1-1_rNnDfBq.jpg
+        new file:   media/user_directory_path/product-13-2_BCyjwCF.jpg
+        modified:   templates/app/core/index.html
+        new file:   templates/app/core/product_detail.html
