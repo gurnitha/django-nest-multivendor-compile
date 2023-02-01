@@ -30,3 +30,14 @@ def category_list_view(request):
 	# print(categories)
 	context = {'categories':categories}
 	return render(request, 'app/core/category_list.html', context)
+
+def product_by_category_list_view(request, cat_id):
+	category_based_id = Category.objects.get(cid=cat_id)
+	products = Product.objects.filter(status_choice='published', category=category_based_id)
+	context = {
+		'category': category_based_id,
+		'products': products,
+	}
+	return render(request, 'app/core/product_by_category_list.html', context)
+
+

@@ -253,3 +253,17 @@ Compiling the step-by-step django-nest-multivendor
 
         modified:   README.md
         modified:   templates/app/core/category_list.html
+
+
+#### 09.3 Creating Product-by category list page
+
+        4 Create product belong to a category - dispaly all products belong to a category
+        3 Create product belong to a category - load static files
+        2 Create product belong to a category - add template
+        1 Create product belong to a category - urls, view, templates
+
+        modified:   README.md
+        modified:   app/core/urls.py
+        modified:   app/core/views.py
+        modified:   templates/app/core/category_list.html
+        new file:   templates/app/core/product_by_category_list.html
