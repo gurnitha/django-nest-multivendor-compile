@@ -16,3 +16,10 @@ def index(request):
 		'products':products,
 	}
 	return render(request, 'app/core/index.html', context)
+
+
+def product_list_view(request):
+	products = Product.objects.all()
+	# print(products)
+	context = {'products':products}
+	return render(request, 'app/core/product_list.html', context)

@@ -215,3 +215,15 @@ Compiling the step-by-step django-nest-multivendor
         new file:   media/user_directory_path/product-9-1_esaY4OO.jpg
         new file:   templates/app/core/index.html
         modified:   templates/base.html
+
+
+#### 08.2 Creating product-list page and rendering featured products to it
+
+        3 Create products list page - add logic to view and loop products to products-list
+        2 Create products list page - loading static files
+        1 Create products list page - add template
+
+        modified:   README.md
+        modified:   app/core/urls.py
+        modified:   app/core/views.py
+        new file:   templates/app/core/product_list.html
