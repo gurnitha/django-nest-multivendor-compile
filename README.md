@@ -388,3 +388,25 @@ Compiling the step-by-step django-nest-multivendor
 
 
 ## 14. WORKING WITH TAGS
+
+
+#### 14.1 Retrieving and rendering tags
+
+        7 Working with Tags - linked each tag in product-detail page to show product-by-tag
+        6 Working with Tags - Add template to tag page and render tags in it
+        5 Working with Tags - Create tag page: urls, views, template
+        4 Working with Tags - Load tags to product-detail page
+        3 Working with Tags - Adding tags field in the Product model
+        2 Working with Tags - Register taggit to the IINSTALLED_APPS
+        1 Working with Tags- Install django-taggit
+
+        new file:   app/core/migrations/0031_product_tags.py
+        modified:   app/core/models.py
+        modified:   app/core/urls.py
+        modified:   app/core/views.py
+        modified:   config/settings.py
+        new file:   media/user_directory_path/product-2-1_wqwZOsc.jpg
+        ...
+        new file:   media/user_directory_path/thumbnail-3_lXH6kN6.jpg
+        modified:   templates/app/core/product_detail.html
+        new file:   templates/app/core/tag.html
