@@ -95,3 +95,6 @@ Compiling the step-by-step django-nest-multivendor
         1 Install django-jazzmin: pip install -U django-jazzmin
 
         modified:   config/settings.py
+
+
+## 05. USER REGISTRATION SYSTEM
