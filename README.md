@@ -434,3 +434,16 @@ Compiling the step-by-step django-nest-multivendor
 ## 16. PRODUCT REVIEWS
 
 
+#### 16. Creating product reviews
+
+        3 Rendering product rating and sum reviews of a product
+        2 Rendering reviews in the Customer questions & answers
+        : Modified readme file
+        1 Adding locic to 
+
+        modified:   README.md
+        new file:   app/core/migrations/0033_alter_productreview_rating.py
+        new file:   app/core/migrations/0034_alter_productreview_rating.py
+        modified:   app/core/models.py
+        modified:   app/core/views.py
+        modified:   templates/app/core/product_detail.html
