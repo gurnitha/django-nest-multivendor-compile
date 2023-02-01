@@ -414,3 +414,18 @@ Compiling the step-by-step django-nest-multivendor
 
 ## 15. CKEDITOR
 
+
+#### 15.1 Setting up CKEditor
+
+        4 Adding more features to CKEditor basic features and some js and css in the product-detail page
+        3 Fixing issue address in context_processors
+        2 Setting up CDEditor basic features
+        1 Install CKEditor
+
+        modified:   app/core/context_processors.py
+        new file:   app/core/migrations/0032_alter_product_description_and_more.py
+        modified:   app/core/models.py
+        modified:   config/settings.py
+        modified:   config/urls.py
+        ...
+        modified:   templates/app/core/product_detail.html
