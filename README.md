@@ -227,3 +227,6 @@ Compiling the step-by-step django-nest-multivendor
         modified:   app/core/urls.py
         modified:   app/core/views.py
         new file:   templates/app/core/product_list.html
+
+
+## 09. PRODUCTS BY CATEGORY
